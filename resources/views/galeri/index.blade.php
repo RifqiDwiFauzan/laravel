@@ -15,7 +15,8 @@
                 <td>Nama</td>
                 <td>Keterangan</td>
                 <td>Path</td>
-                <td>User</td>
+                <td>Keterangan</td>
+                <td>Users Id</td>
                 <td>Create</td>
                 <td>Update</td>
                 <td>Aksi</td>
@@ -27,7 +28,8 @@
                 <td>{!! $item->id !!}</td>
                 <td>{!! $item->nama !!}</td>
                 <td>{!! $item->keterangan !!}</td>
-                <td>{!! $item->path !!}</td>
+                <td><img src="{!! asset ($item->path) !!}" width="100px">  </td>
+                <td>{!! $item->kategori_galeri_id !!}</td>
                 <td>{!! $item->users_id !!}</td>
                 <td>{!! $item->created_at->format('d/m/Y H:i:s') !!}</td>
                 <td>{!! $item->updated_at->format('d/m/Y H:i:s') !!}</td>
